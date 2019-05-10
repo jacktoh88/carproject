@@ -47,6 +47,19 @@ void Car::insertdata()
 	}
 
 }
+// function to display a car's data
+void Car::display()
+{
+	cout << "\n Year: " << year << "\t\t Brand: " << brand << "\t\t Model: " << model << "\t\t Color: " << color << "\t\t VIN: " << vin << "\t\t";
+	if(seats == 1){
+		cout << "leather seats";
+	}
+	else{
+		cout << "cloth seats";
+	}
+	cout << "\n Price: $" << price;
+}
+
 
 int main() {
 
